@@ -1,52 +1,112 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+/*---------------------------Generales--------------------------*/
+
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/*Encabezado*/
+/*---------------------------Encabezado--------------------------*/
 header{
-    border: 5px solid black;
+    display: flex;
+    padding: 7px 35px 10px 15px;
 }
 
-div{
-    display: inline-flex;
-}
-
+/*Título*/
 div h1{
     font-family: 'Lobster', cursive;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     padding: 3px;
-    margin: 7px 15px 10px 13px;
+    margin: 7px 25px 10px 13px;
+    width: 30%;
 }
 
+/*div general*/
+div{
+    width: 40%;
+}
+
+/*input*/
 div input{
+    margin-top: 25px;
     border: 2px solid grey;
     border-radius: 60px;
-    width: 100%;
+    width: 80%;
     height: 2em;
 }   
+
+input:focus{
+    color: yellowgreen;
+}
 
 input[placeholder]{
     text-align: center;
 }
 
+/*Menú*/
+nav{
+    display: flex;
+    width: 35%;
+    float: right;
+}
+
 nav ul{
-    display: inline;
+    margin: auto;
     width: 100%;
     overflow: auto;
 }
 
 nav ul li{
+    font-size: 25px;
     float: right;
     list-style: none;
+    margin: 7px;
 }
 
 nav ul li a{
-    text-decoration: none;
+    color: rgb(95, 22, 95);
 }
-/*Main*/
 
-/*Section*/
+nav ul li a:hover{
+    text-decoration: none;
+    color: yellowgreen;
+}
+
+/*---------------------------Main--------------------------*/
+main{
+    margin: 20px;
+    
+}
+
+/*--------------------------Section--------------------------*/
+section{
+    width: 80%;
+    margin: auto;
+}
+
+img{
+    width: 32%;
+    margin: 5px;
+    height: 500px;
+}
+
+/*---------------------------Footer--------------------------*/
+footer{
+    background-color:#282F33;
+    color: white;
+    height: 70px;
+}
+
+p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+#alien{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    padding-top: 2px;
+}
